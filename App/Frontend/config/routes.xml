@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <routes>
-  <route url="/testp4/" module="News" action="index"  />
-  <route url="/testp4/news-([0-9]+)\.html" module="News" action="show" vars="id"/>
-  <route url="/testp4/commenter-([0-9]+)\.html" module="News" action="insertComment" vars="news" />
+  <route url="/projet4/accueil-([0-9]+)" module="Chapter" action="index" vars="page" />
+  <route url="/projet4/accueil-([a-zA-Z0-9-._@]+)" module="Chapter" action="badurl" vars="page" />
+  <route url="/projet4/chapter-([0-9]+)" module="Chapter" action="show" vars="id"/>
+  <route url="/projet4/commenter-([0-9]+)" module="Chapter" action="insertComment" vars="chapter" />
+  <route url="/projet4/signal-([0-9]+)/chapter-([0-9]+)" module="Chapter" action="signal" vars="idC,idN" />
 </routes>
+

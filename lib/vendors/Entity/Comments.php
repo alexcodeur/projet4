@@ -5,22 +5,30 @@ use \OCFram\Entity;
 
 class Comments extends Entity
 {
-  protected $news,
+  protected $id,
+            $chapter,
             $name,
             $comment,
-            $date_add_comment;
+            $date_add_comment,
+            $signalComment;
 
   const INVALID_AUTHOR = 1;
   const INVALID_CONTENT = 2;
+  const INVALID_SIGNAL = 3;
 
   public function isValid()
   {
     return !(empty($this->name) || empty($this->comment));
   }
 
-  public function setNews($news)
+  public function setId($id)
   {
-    $this->news = (int) $news;
+    $this->id = (int) $id;
+  }
+
+  public function setChapter($chapter)
+  {
+    $this->chapter = (int) $chapter;
   }
 
   public function setName($name)
@@ -48,9 +56,23 @@ class Comments extends Entity
     $this->date_add_comment = $dateAddComment;
   }
 
-  public function news()
+  public function setSignalComment($signalComment)
   {
-    return $this->news;
+      if (!is_string($signalComment))
+      {
+          $this->erreurs[] = self::INVALID_SIGNAL;
+      }
+      $this->signalComment = $signalComment;
+  }
+
+    public function id()
+    {
+        return $this->id;
+    }
+
+  public function chapter()
+  {
+    return $this->chapter;
   }
 
   public function name()
@@ -66,5 +88,10 @@ class Comments extends Entity
   public function dateAddComment()
   {
     return $this->date_add_comment;
+  }
+
+  public function signalComment()
+  {
+    return $this->signalComment;
   }
 }

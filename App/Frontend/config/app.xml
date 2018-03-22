@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <definitions>
-  <define var="nombre_news" value="5" />
-  <define var="nombre_caracteres" value="200" />
+  <define var="number_chapter" value="4" />
+  <define var="number_character" value="200" />
 </definitions>
+

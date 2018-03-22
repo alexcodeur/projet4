@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('../fonts/cac_champagne-webfont.eot');
+    src: url('../fonts/cac_champagne-webfont.woff') format('woff'),
+    url('../fonts/cac_champagne-webfont.ttf') format('truetype'),
+    url('../fonts/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'great_vibesregular';
+    src: url('../fonts/greatvibes-regular-webfont.woff2') format('woff2'),
+    url('../fonts/greatvibes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'timbra_sansregular';
+    src: url('timbra_sans_regular-webfont.eot');
+    src: url('timbra_sans_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('timbra_sans_regular-webfont.woff2') format('woff2'),
+    url('timbra_sans_regular-webfont.woff') format('woff'),
+    url('timbra_sans_regular-webfont.ttf') format('truetype'),
+    url('timbra_sans_regular-webfont.svg#timbra_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 1200px)
+{
+    .text-bio
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .container
+    {
+        width: 750px;
+    }
+}
+@media (min-width: 992px)
+{
+    .container
+    {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .container
+    {
+        width: 1170px;
+    }
+}
+
+.row
+{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+[class*="col"]
+{
+    margin-bottom: 20px;
+}
+
+body
+{
+    background-color: #eceaea;
+    padding: 0;
+    margin: 0;
+}
+
+/* Entête */
+header
+{
+    padding-top: 150px;
+    text-align: center;
+    background-image: url("../images/fond-entete.jpg");
+    background-position: 35% 65%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.titre-entete
+{
+    font-family: 'cac_champagneregular', Arial, serif;
+    font-size: 5em;
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+/* Menu navigation */
+.direction-menu
+{
+    text-align: center;
+    list-style-type: none;
+}
+
+/* Biographie */
+.biographie
+{
+    margin-top: 17px;
+}
+
+.jean
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.text-bio
+{
+    text-align: justify;
+    width: 60%;
+    font-size: 1.5em;
+    margin-top: 90px;
+}
+
+/* Content */
+label, tr
+{
+    font-size: 1.5em;
+}
+
+.first-scroll
+{
+    background-image: url("../images/first-scroll.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chapter-container
+{
+    padding-top: 10px;
+}
+
+.chapter-index
+{
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.title-front-index
+{
+    font-family: 'great_vibesregular', Arial, serif;
+    text-align: center;
+    font-size: 3em;
+}
+
+#lipsum
+{
+    font-family: 'timbra_sansregular', Arial, sans-serif;
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+#post-title
+{
+    text-align: center;
+    font-family: 'great_vibesregular', Arial, serif;
+    font-size: 3em;
+    color: #2E5268;
+}
+
+.paginate{
+    background-color: black;
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+
+/* content : show */
+#date-add, #date-update
+{
+    text-align: right;
+}
+
+.text-post-show
+{
+    font-size: 1.4em;
+    font-family: 'timbra_sansregular', Arial, sans-serif;
+    text-align: justify;
+}
+
+.pShow
+{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.good-comment legend
+{
+    border: 1px solid blue;
+    text-align: center;
+}
+
+.bad-comment legend
+{
+    border: 1px solid red;
+    text-align: center;
+}
+
+.signal-comment
+{
+    color: red;
+}
+
+.link-chapter
+{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* content : Connexion Admin */
+.input-connexion
+{
+    width: 300px;
+}
+
+/* content : admin area*/
+.button-choice
+{
+    text-align: center;
+}
+
+/* Footer */
+footer
+{
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+}
+
+footer div
+{
+    text-align: center;
+    margin-top: 10px;
+}

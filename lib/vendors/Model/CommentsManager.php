@@ -32,17 +32,17 @@ abstract class CommentsManager extends Manager
 
   /**
    * Méthode permettant de récupérer une liste de commentaires.
-   * @param $news La news sur laquelle on veut récupérer les commentaires
+   * @param $chapter Le chapitre sur lequel on veut récupérer les commentaires
    * @return array
    */
-  abstract public function getListOf($news);
+  abstract public function getListOf($chapter);
 
   /**
-   * Méthode permettant de modifier un commentaire.
-   * @param $comment Le commentaire à modifier
+   * Méthode permettant de valider un commentaire.
+   * @param $comment Le commentaire à valider
    * @return void
    */
-  abstract protected function modify(Comment $comment);
+  abstract public function validate($comment);
 
   /**
    * Méthode permettant d'obtenir un commentaire spécifique.
@@ -59,9 +59,36 @@ abstract class CommentsManager extends Manager
   abstract public function delete($id);
 
   /**
-   * Méthode permettant de supprimer tous les commentaires liés à une news
-   * @param $news L'identifiant de la news dont les commentaires doivent être supprimés
+   * Méthode permettant de supprimer tous les commentaires liés à un chapitre
+   * @param $chapter L'identifiant du chapitre dont les commentaires doivent être supprimés
    * @return void
    */
-  abstract public function deleteFromNews($news);
+  abstract public function deleteFromChapter($chapter);
+
+  /**
+   * Méthode permettant de signaler un commentaire
+   * @param $commentSignal Le commentaire à signalé
+   * @return void
+   */
+  abstract public function signalComment($commentSignal);
+
+  /**
+   * Méthode permettant de vérifier si un commentaire est signalé
+   * @param $id Le commentaire signalé
+   * @return int
+   */
+  abstract public function commentPosted($comment);
+
+  /**
+   *  Méthode permettant de savoir quel chapitre contient un ou plusieurs commentaires signalé
+   * @return void
+   */
+  abstract public function commentSignaled();
+
+  /**
+   * Méthode qui récupère chaques entrées
+   * @return void
+   */
+  abstract public function count();
 }
+

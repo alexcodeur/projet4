@@ -1,0 +1,23 @@
+/* biograohie */
+.text-bio {
+    width: 100%;
+}
+
+/* content : index */
+.first-scroll {
+    background-image: none;
+}
+
+.chapter-index {
+    width: 100%;
+}
+
+.paginate {
+    margin-bottom: 60px;
+    background-color: inherit;
+}
+
+/* content : show */
+.text-post-show, .pShow {
+    font-size: inherit;
+}
